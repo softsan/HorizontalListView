@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+x:Class="HorizontalListView.ListPage"
+xmlns:Controls="clr-namespace:HorizontalListView;assembly=HorizontalListView">
+	<ContentPage.Content>
+	<Controls:HorizontalList ListOrientation="Horizontal" ItemsSource="{Binding Categories}">
+			<Controls:HorizontalList.ItemTemplate>
+				<DataTemplate>
+					<Grid HorizontalOptions="FillAndExpand">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+						<BoxView BackgroundColor="Gray" Opacity="0.5" Grid.Row="0" />
+						<Label Text="{Binding Name}" Grid.Row="0" YAlign="Center" />
+						<ScrollView Grid.Row="1" Orientation="Horizontal">
+							<Controls:HorizontalList Command="{Binding SelectedItemCommand}" ListOrientation="Horizontal" ItemsSource="{Binding CategoryItem}">
+								<Controls:HorizontalList.ItemTemplate>
+									<DataTemplate>
+										<Grid>
+											<Grid.RowDefinitions>
+												<RowDefinition Height="Auto" />
+												<RowDefinition Height="Auto" />
+											</Grid.RowDefinitions>
+											<Image Source="{Binding ImageUrl}" Grid.Row="0" HeightRequest="50" WidthRequest="50" />
+											<Label Text="{Binding ItemName}" Grid.Row="1" XAlign="Center" />
+										</Grid>
+									</DataTemplate>
+								</Controls:HorizontalList.ItemTemplate>
+							</Controls:HorizontalList>
+						</ScrollView>
+					</Grid>
+				</DataTemplate>
+			</Controls:HorizontalList.ItemTemplate>
+		</Controls:HorizontalList>
+	</ContentPage.Content>
+</ContentPage>
