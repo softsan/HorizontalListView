@@ -15,4 +15,4 @@ x:Class="test.ListPage" xmlns:Controls="clr-namespace:test;assembly=test">
     </DataTemplate> 
   </Controls:HorizontalListView.ItemTemplate> 
   </Controls:myControl>
-</ContentPage>```
+</ContentPage>
