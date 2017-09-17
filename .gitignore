@@ -10,26 +10,37 @@
 /packages
 
 
-agClient/agClient.Android/obj
-agClient/agClient.iOS/obj
-agClient/agClient.Android/bin
-agClient/agClient.iOS/bin
-AgSignaling/bin
-AgSignaling/obj
-XamarinOpenTok/
+
 packages/
-AgriTok/AgriTok/AgriTok/AgriTok.Droid/bin/
-AgriTok/AgriTok/AgriTok/AgriTok.Droid/obj/
-AgriTok/AgriTok/AgriTok/AgriTok.iOS/obj/
-AgriTok/AgriTok/AgriTok/AgriTok.iOS/bin/
 
 
-!packages/repositories.config
-!packages/Static_Azure.Messaging/
-!packages/Static_Dropbox.Drop-ins/
-!packages/Static_FM/
-!packages/Static_HockeyApp/
-agClient.Android/bin/
-agClient.Android/obj/
-agClient.iOS/obj/
-agClient.iOS/bin/
+
+
+*.apk
+
+*.dll
+
+*.mdb
+
+*.pdb
+
+*.xml
+
+*.jar
+
+*.stamp
+
+*.class
+
+*.java
+
+HorizontalListView/Droid/obj/Debug/_dex_stamp
+HorizontalListView/Droid/obj
+HorizontalListView/Droid/bin
+HorizontalListView/iOS/bin
+HorizontalListView/iOS/debug
+*.txt
+
+*.png
+
+*.items
