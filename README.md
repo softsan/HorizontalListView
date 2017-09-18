@@ -1,6 +1,13 @@
 # HorizontalListView
 Simple Cross-Platform Horizontal Listview using Xamarin.Forms
-
+<div style="height:50%"> 
+<b>Android</b>
+<img src="https://github.com/softsan/HorizontalListView/blob/master/HorizontalListView/screenshots/android.png" height="900px" width="400px" />
+ </div>
+ <div>
+<b>iOS </b>
+<img src="https://github.com/softsan/HorizontalListView/blob/master/HorizontalListView/screenshots/iOS.png" width="400" height="900"/>
+ <div>
 
 Sample usage:(XAML) 
 
@@ -16,3 +23,4 @@ x:Class="test.ListPage" xmlns:Controls="clr-namespace:test;assembly=test">
   </Controls:HorizontalListView.ItemTemplate> 
   </Controls:myControl>
 </ContentPage>
+
